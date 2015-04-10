@@ -20,6 +20,33 @@ The example creates a new field 'authorPopularity' to Authors collection with va
 The weigth values must be integer values. The popularity field will be automatically updated whenever given key values change.
 
 
+key | value
+--- | --- 
+_id | 1
+name | author1
+likes | 10
+comments | 20
+followers | 30
+authorPopularity | 110
+
+key | value
+--- | --- 
+_id | 1
+name | author2
+likes | 10
+comments | 30
+followers | 20
+authorPopularity | 130
+
+The calculated value helps fetching collections in popularity order.
+
+```javascript
+Authors.find({}, {sort:{authorPopularity:-1}}).fetch()[0].name = author2
+Authors.find({}, {sort:{authorPopularity:-1}}).fetch()[1].name = author1
+
+```
+
+
 ## API
 
 **collection.createPopularityContest(lookup, name)**
