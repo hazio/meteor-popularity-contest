@@ -30,8 +30,8 @@ The weigth values must be integer values. The popularity field will be automatic
   
 2. ***Arguments***
 
-  **lookup** — Array of objects
-  Array of field names (and factors) on collection to perform the popularity count.  
+  **lookup** — Array
+  Array of objects containing field names and factors on collection to perform the popularity count.  
 
   **name** — String  
   Specify a custom popularity field name
