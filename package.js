@@ -1,6 +1,6 @@
 Package.describe({
   name: 'hazio:popularity-contest',
-  version: '0.0.2',
+  version: '0.0.4',
   summary: 'Generates a popularity value of collection based on user defined fields & factors',
   git: 'https://github.com/hazio/meteor-popularity-contest',
   documentation: 'README.md'
